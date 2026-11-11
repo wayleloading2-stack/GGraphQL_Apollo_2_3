@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f3f5;
+  color: #242424;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  padding: 24px;
+  background: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 19px;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+button {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 4px;
+  background: #3269aa;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.tasks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.task small {
+  display: block;
+  margin-top: 6px;
+  color: #777;
+}
+
+.completed {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.done {
+  color: #45844a;
+  font-size: 14px;
+}
+
+.error {
+  color: #b12b2b;
+  font-size: 14px;
+}
+
+@media (max-width: 540px) {
+  .container {
+    margin: 15px;
+    padding: 16px;
+  }
+}
